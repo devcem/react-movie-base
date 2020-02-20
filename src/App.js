@@ -4,6 +4,7 @@ import './App.scss';
 import MovieList from './components/movies/MovieList';
 import MovieCard from './components/movies/MovieCard';
 import SearchBar from './components/layout/SearchBar';
+import Login from './components/layout/Login';
 
 
 function App() {
