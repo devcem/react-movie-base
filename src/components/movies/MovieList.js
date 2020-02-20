@@ -4,7 +4,7 @@ import axios from 'axios'
 export default class MovieList extends Component {
     render() {
         return (
-            <div>Tetetetetet</div>
+            <div></div>
         )
     }
 }
