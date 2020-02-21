@@ -10,11 +10,7 @@ import Login from './components/layout/Login';
 function App() {
   return (
     <div className="App">
-     <div>
-       <MovieList/>
-       <MovieCard/>
-       <SearchBar/>
-     </div>
+      <SearchBar/>
     </div>
   );
 }

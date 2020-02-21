@@ -4,8 +4,14 @@ export default class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: ''
+            username: '',
+            color: true
         };
+    }
+    changeColor = () => {
+        this.setState({
+            color: !this.state.color
+        })
     }
     SubmitHandler = (event) => {
         event.preventDefault();
@@ -24,6 +30,8 @@ export default class Login extends Component {
            header = "";
        }
         return (
+            <React.Fragment>
+            <h1 onClick={this.changeColor} className={this.state.color ? 'show' : 'hide'}>Fun WiTh ColOUrs</h1>
             <form onSubmit={this.SubmitHandler}>
                 {header}
                 <input 
@@ -33,6 +41,8 @@ export default class Login extends Component {
                 <input
                 type="submit" />
             </form>
+            </React.Fragment>
+            
         );
     }
 } 

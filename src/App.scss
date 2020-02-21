@@ -3,6 +3,7 @@
   height: 100vh;
   .search-bar {
     width: 100%;
+    padding-top: 5vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -19,12 +20,29 @@
 }
 
 .dropdown {
-  position: relative;
-    left: 0;
-    width: 80%;
+  display: flex;
+  justify-content: center;
     .dropdown-menu {
-      min-width: 100% !important;
+      position: inherit;
     }
+}
+
+.is-active {
+  display: block;
+}
+
+.movie-card {
+  display: flex;
+  img {
+    width: 170px;
+    height: 250px;
+  }
+  .movie-card-info {
+    display: flex;
+    flex-direction: column;
+    white-space: pre-line;
+    margin-left: 20px;
+  }
 }
 
 .show {
