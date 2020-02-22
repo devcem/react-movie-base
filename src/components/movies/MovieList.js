@@ -1,10 +1,10 @@
-import React, { Component} from 'react'
-import axios from 'axios'
+import React, { Component } from 'react'
 
 export default class MovieList extends Component {
+    
     render() {
         return (
-            <div></div>
+            <div className="test-class"></div>
         )
     }
 }
